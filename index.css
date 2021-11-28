@@ -18,25 +18,30 @@ body {
 .offline {
   width: 60%;
   margin: auto;
-  margin-bottom: 1%;
+  margin-bottom: 3%;
 }
 
 .row {
   display: -ms-flexbox; /* IE10 */
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
+  -webkit-flex: 1 1 auto;
   flex-wrap: wrap;
-  padding: 0 auto;
+  justify-content: space-around;
   margin-bottom: 5%;
 }
-
 .column {
-  -ms-flex: 28%; /* IE10 */
-  flex: 28%;
-  display: flex;
+  width: 32%;
   font-size: 2vw;
-  align-items: center;
-  padding: 0 2%;
+}
+.writtenCol {
+  align-self: center;
+}
+
+.column a {
+  text-decoration: none;
+  color: red;
+  margin-top: 2%;
 }
 
 .column img {
@@ -70,4 +75,12 @@ body {
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+.links a {
+  color: red;
+  text-decoration: none;
+}
+.icons {
+  margin-right: 2%;
+  margin-bottom: -1%;
 }
